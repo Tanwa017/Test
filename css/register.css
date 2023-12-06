@@ -1,0 +1,32 @@
+.st {
+    /* width: 80%; */
+    border: 15px;
+    padding: 5%;
+    margin: 15%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.flex-end {
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.starlabel label::after {
+    content: " *";
+    color: red;
+}
+
+@media screen and (max-width: 700px) {
+    .st {
+        margin: 0%;
+    }
+    .hidden-mobile {
+        display: none;
+    }
+}

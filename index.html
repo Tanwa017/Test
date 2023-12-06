@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใบสมัครงาน</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span>บริษัท
+                    วิษณุ เทคโนพลัส จำกัด<br>VISASU TECHNOPLUS CO.LTD.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <span>
+                            <a class="navbar-brand" href="login.php">Login</a>
+                        </span>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form action="data.php" method="post" target="_blank">
+        <div class="container">
+            <div style="text-align: center; margin: top 50px;">
+                <img src="img/visanu.jpg" alt><br>
+                <label style="font-weight: bold; font-size: 16px;">บริษัท
+                        วิษณุ เทคโนพลัส จำกัด</label><br>
+                <label style="font-size: 16px;">VISASU TECHNOPLUS CO.LTD.</label>
+            </div>
+            <div>
+                <br>
+                <h3 style="text-decoration:underline; text-align:center; margin-bottom:15px;">ใบสมัครงาน</h3>
+                <div class="file">
+                    <label>รูปถ่าย 1 นิ้ว : </label>
+                    <input type="file" id="file" name="myfile" required>
+                </div>
+                <div class="row starlabel">
+                    <div class="column2">
+                        <label>ชื่อ</label><br>
+                        <input type="text" class="form-control" name="fname" required>
+                    </div>
+                    <div class="column2">
+                        <label>นามสกุล</label><br>
+                        <input type="text" class="form-control" name="lname" required>
+                    </div>
+                </div>
+                <div class="row starlabel">
+                    <div class="column">
+                        <label>Name in English</label><br>
+                        <input type="text" class="form-control" name="eFname" required>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="column2 starlabel">
+                        <label>ชื่อเล่น</label><br>
+                        <input type="text" class="form-control" name="Gname" required>
+                    </div>
+                    <div class="column2 ">
+                        <div class="starlabel">
+                            <label>เพศ</label><br>
+                        </div>
+                        <div>
+                            &nbsp;&nbsp;
+                            <input type="radio" name="sex" id value="ชาย">
+                            <label>ชาย</label>
+                        </div>
+                        <div>
+                            &nbsp;&nbsp;
+                            <input type="radio" name="sex" id value="หญิง">
+                            <label>หญิง</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row starlabel">
+                    <div class="column">
+                        <label>สมัครตำแหน่ง</label><br>
+                        <input type="text" class="form-control" name="position" required>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="column2 starlabel">
+                        <label>เงินเดือนที่ต้องการ</label>
+                        <input type="text" class="form-control" name="salary" required>
+                    </div>
+                    <div class="column2 starlabel">
+                        <label class="starlabel">เงินต่อ...</label>
+                        <select name="salaryM" id="salary">
+                                <option value></option>
+                                <option value="เดือน">เดือน</option>
+                                <option value="วัน">วัน</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h4 style="text-align: center;">ประวัติส่วนตัว</h4>
+                <div>
+                    <label>ที่อยู่ตามทะเบียนบ้าน</label>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>เลขที่</label><br>
+                            <input type="text" class="form-control" name="number" required>
+                        </div>
+                        <div class="column3">
+                            <label>หมู่ที่</label><br>
+                            <input type="text" class="form-control" name="Village" required>
+                        </div>
+                        <div class="column3">
+                            <label>ถนน</label><br>
+                            <input type="text" class="form-control" name="road" required>
+                        </div>
+                    </div>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>ตำบล/แขวง</label><br>
+                            <input type="text" class="form-control" name="Subdistrict" required>
+                        </div>
+                        <div class="column3">
+                            <label>อำเภอ/เขต</label><br>
+                            <input type="text" class="form-control" name="district" required>
+                        </div>
+                        <div class="column3">
+                            <label>จังหวัด</label><br>
+                            <input type="text" class="form-control" name="province" required>
+                        </div>
+                    </div>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>รหัสไปรษณีย์</label><br>
+                            <input type="text" class="form-control" name="zipcode" required>
+                        </div>
+                        <div class="column4">
+                            <label>E-mail</label><br>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <label>ที่อยู่ปัจุบัน</label>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>เลขที่</label><br>
+                            <input type="text" class="form-control" name="caNumber" required>
+                        </div>
+                        <div class="column3">
+                            <label>หมู่ที่</label><br>
+                            <input type="text" class="form-control" name="caVillage" required>
+                        </div>
+                        <div class="column3">
+                            <label>ถนน</label><br>
+                            <input type="text" class="form-control" name="caRoad" required>
+                        </div>
+                    </div>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>ตำบล/แขวง</label><br>
+                            <input type="text" class="form-control" name="caSubdistrict" required>
+                        </div>
+                        <div class="column3">
+                            <label>อำเภอ/เขต</label><br>
+                            <input type="text" class="form-control" name="caDistrict" required>
+                        </div>
+                        <div class="column3">
+                            <label>จังหวัด</label><br>
+                            <input type="text" class="form-control" name="caProvince" required>
+                        </div>
+                    </div>
+                    <div class="row starlabel">
+                        <div class="column3">
+                            <label>รหัสไปรษณีย์</label><br>
+                            <input type="text" class="form-control" name="caZipcode" required>
+                        </div>
+                        <div class="column3">
+                            <label>โทรศัพท์</label><br>
+                            <input type="text" class="form-control" name="tol" required>
+                        </div>
+                        <div class="column3">
+                            <label>มือถือ</label><br>
+                            <input type="text" class="form-control" name="mobile" required>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label>บ้านที่อาศัย</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="home" id value="อาศัยกับครอบครัว">
+                    <label>อาศัยกับครอบครัว</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="home" id value="บ้านตัวเอง">
+                    <label>บ้านตัวเอง</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="home" id value="บ้านเช่า">
+                    <label>บ้านเช่า</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="home" id value="หอพัก">
+                    <label>หอพัก</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="home" id value="other">
+                    <label>อื่นๆ</label>
+                    <div class="ooo" id="other" style="display: none;">
+                        <input type="text" class="form-control" name="other">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>วันเกิด</label><br>
+                        <input type="date" class="form-control" name="birthday" id>
+                    </div>
+                    <div class="column2">
+                        <label>อายุ</label><br>
+                        <input type="text" class="form-control" name="age" id>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>ส่วนสูง</label><br>
+                        <input type="text" class="form-control" name="height" id>
+                    </div>
+                    <div class="column2">
+                        <label>น้ำหนัก</label><br>
+                        <input type="text" class="form-control" name="weight" id>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>สัญชาติ</label><br>
+                        <input type="text" class="form-control" name="nationality" id>
+                    </div>
+                    <div class="column2">
+                        <label>เชื่อชาติ</label><br>
+                        <input type="text" class="form-control" name="nation" id>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>ศาสนา</label><br>
+                        <input type="text" class="form-control" name="religion" id>
+                    </div>
+                    <div class="column2">
+                        <label>เลขที่บัตรประชาชน</label><br>
+                        <input type="text" class="form-control" name="idCard" id>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>สถานที่ออกบัตร</label><br>
+                        <input type="text" class="form-control" name="placeIssue" id>
+                    </div>
+                    <div class="column2">
+                        <label>บัตรหมดอายุ</label><br>
+                        <input type="date" class="form-control" name="ExpiredCard" id>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        <label>บัตรผู้เสียภาษีเลขที่</label><br>
+                        <input type="text" class="form-control" name="taxNumber" id>
+                    </div>
+                    <div class="column2">
+                        <label>บัตรประกันสังคมเลขที่</label><br>
+                        <input type="text" class="form-control" name="securityNumber" id>
+                    </div>
+                </div>
+                <div>
+                    <label>ภาวะทางการทหาร</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="conditions" id value="ได้รับการยกเว้น">
+                    <label>ได้รับการยกเว้น</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="conditions" id value="ปลดเป็นทหารกองหนุน">
+                    <label>ปลดเป็นทหารกองหนุน</label><br> &nbsp;&nbsp;
+                    <input type="radio" name="conditions" id value="3">
+                    <label>ยังไม่ได้รับการเกณฑ์ทหาร</label>
+                    <div class="ooo" id="soldier" style="display: none;">
+                        <label>จะเกณฑ์ในปี</label><br>
+                        <input type="text" class="form-control" name="enlisted">
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <!-- <div> -->
+            <!-- <h4 style="text-align: center;">ประวัติครอบครัว</h4> -->
+            <!-- <div> -->
+            <!-- <label>สถานภาพ</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="status" id="" value="โสด"> -->
+            <!-- <label>โสด</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="status" id="" value="แต่งงาน"> -->
+            <!-- <label>แต่งงาน</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="status" id="" value="หม้าย"> -->
+            <!-- <label>หม้าย</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="status" id="" value="แยกกัน/หย่า"> -->
+            <!-- <label>แยกกัน/หย่า</label><br> -->
+            <!-- </div> -->
+            <!-- <div> -->
+            <!-- <label>กรณีแต่งงาน</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="wedding" value="จดทะเบียน"> -->
+            <!-- <label>จดทะเบียน</label><br> &nbsp;&nbsp; -->
+            <!-- <input type="radio" name="wedding" value="ไม่ได้จดทะเบียน"> -->
+            <!-- <label>ไม่ได้จดทะเบียน</label><br> -->
+            <!-- </div> -->
+            <!-- <div> -->
+            <!-- <label>ชื่อภรรยา/สามี</label><br> -->
+            <!-- <input type="text" class="form-control" name="husband"> -->
+            <!-- </div> -->
+            <!-- <div> -->
+            <!-- <label>ชื่อสถานที่ทำงาน</label><br> -->
+            <!-- <input type="text" class="form-control" name="nameWorkplace"> -->
+            <!-- </div> -->
+            <!-- <div> -->
+            <!-- <label>ตำแหน่ง</label><br> -->
+            <!-- <input type="text" class="form-control" name="husbandPosition"> -->
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+            <!-- <div class="column3"> -->
+            <!-- <label>มีบุตร</label><br> -->
+            <!-- <input type="text" class="form-control" name="child"> -->
+            <!-- </div> -->
+            <!-- <div class="column3"> -->
+            <!-- <label>บุตรที่กำลังศึกษา</label><br> -->
+            <!-- <input type="text" class="form-control" name="studying"> -->
+            <!-- </div> -->
+            <!-- <div class="column3"> -->
+            <!-- <label>บุตรที่ยังไม่เข้าศึกษา</label><br> -->
+            <!-- <input type="text" class="form-control" name="education"> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <div>
+                <div class="flex-end">
+                    <input type="reset" value="Reset" style="text-align: center;">
+                    <input type="submit" value="Submit" style="text-align: center;">
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>
